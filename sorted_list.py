@@ -52,3 +52,13 @@ lists = [
     create_linked_list([1, 3, 4]),
     create_linked_list([2, 6])
 ]
+
+
+merged_list = mergeKLists(lists)
+print_linked_list(merged_list)  
+
+# Edge Case: Empty list
+print_linked_list(mergeKLists([]))  
+
+# Edge Case: List with an empty sublist
+print_linked_list(mergeKLists([[]]))  
