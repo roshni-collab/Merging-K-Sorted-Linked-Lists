@@ -29,3 +29,12 @@ def mergeKLists(lists):
 
     return dummy.next
 
+# Helper function to convert a list into a linked list
+def create_linked_list(arr):
+    dummy = ListNode()
+    current = dummy
+    for val in arr:
+        current.next = ListNode(val)
+        current = current.next
+    return dummy.next
+
