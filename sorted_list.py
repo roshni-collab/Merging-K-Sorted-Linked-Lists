@@ -27,3 +27,5 @@ def mergeKLists(lists):
         if node.next:
             heappush(min_heap, (node.next.val, i, node.next))  # Push next node
 
+    return dummy.next
+
