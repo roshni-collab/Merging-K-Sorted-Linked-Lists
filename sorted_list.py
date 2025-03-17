@@ -15,3 +15,15 @@ def mergeKLists(lists):
     for i, l in enumerate(lists):
         if l:
             heappush(min_heap, (l.val, i, l))  # Push value, index, and node
+
+    dummy = ListNode()
+    current = dummy
+
+    while min_heap:
+        val, i, node = heappop(min_heap)  # Extract smallest node
+        current.next = node
+        current = current.next
+        
+        if node.next:
+            heappush(min_heap, (node.next.val, i, node.next))  # Push next node
+
