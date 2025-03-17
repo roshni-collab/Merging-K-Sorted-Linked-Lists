@@ -45,3 +45,10 @@ def print_linked_list(node):
         result.append(node.val)
         node = node.next
     print(result)
+
+# Example Test Cases
+lists = [
+    create_linked_list([1, 4, 5]),
+    create_linked_list([1, 3, 4]),
+    create_linked_list([2, 6])
+]
