@@ -38,3 +38,10 @@ def create_linked_list(arr):
         current = current.next
     return dummy.next
 
+# Helper function to print a linked list
+def print_linked_list(node):
+    result = []
+    while node:
+        result.append(node.val)
+        node = node.next
+    print(result)
