@@ -6,4 +6,6 @@ class ListNode:
         self.val = val
         self.next = next
 
-    def mergeKLists(lists):
+def mergeKLists(lists):
+    if not lists or len(lists) == 0:
+        return None
